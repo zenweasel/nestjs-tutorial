@@ -3,5 +3,7 @@ import { CoffeesService } from '../coffees/coffees.service';
 
 @Injectable()
 export class CoffeeRatingService {
-  constructor(private readonly coffeesService: CoffeesService) {}
+  constructor(private readonly coffeesService: CoffeesService) {
+    console.log('CoffeeRatingService instantiated');
+  }
 }
